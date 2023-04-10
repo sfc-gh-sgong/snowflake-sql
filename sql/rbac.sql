@@ -162,7 +162,7 @@ grant usage on future functions in 		schema MAIN to role {{company_name}}_{{env_
 grant select on future materialized views in 	schema MAIN to role {{company_name}}_{{env_name}}_{{schema_name}}_SR;
 
 -- Read/Write
-grant insert, update, delete, truncate, referenceson future tables in schema MAIN to role {{company_name}}_{{env_name}}_{{schema_name}}_SRW;
+grant insert, update, delete, truncate, references on future tables in schema MAIN to role {{company_name}}_{{env_name}}_{{schema_name}}_SRW;
 grant insert, update, delete, references on future external tables in schema MAIN to role {{company_name}}_{{env_name}}_{{schema_name}}_SRW;
 grant read, write on future stages in    schema MAIN to role {{company_name}}_{{env_name}}_{{schema_name}}_SRW;
 grant usage on future sequences in schema MAIN to role {{company_name}}_{{env_name}}_{{schema_name}}_SRW;
